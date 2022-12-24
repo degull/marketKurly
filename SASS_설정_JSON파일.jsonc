@@ -1,0 +1,27 @@
+{
+   "editor.mouseWheelZoom": true,
+   "emmet.showAbbreviationSuggestions": false,
+   "emmet.optimizeStylesheetParsing": false,
+   "liveServer.settings.port": 0,
+   "liveServer.settings.useLocalIp": true,
+   "emmet.triggerExpansionOnTab": true,
+   "editor.minimap.enabled": false,
+   "security.workspace.trust.untrustedFiles": "open",
+
+   //라이브 사스(sass) 초기화(format) 설정(셋팅 setting) 및 스타일파일 확장자와 스타일 파일 저장 경로 지정
+   "liveSassCompile.settings.formats": [
+       {
+           "format": "expanded",
+           "extensionName": ".css",
+           "savePath": "~/../css"
+       }
+   ],
+
+   //라이브 사스 맵 사용 안함 false
+   "liveSassCompile.settings.generateMap": false,
+   "editor.tabSize": 3,
+   "editor.fontSize": 36,
+   "workbench.editor.untitled.hint": "hidden",
+   "window.zoomLevel": 1
+
+}
