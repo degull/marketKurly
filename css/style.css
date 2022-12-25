@@ -105,6 +105,7 @@
   background: #fff;
   width: 120px;
   border: 1px solid #ccc;
+  z-index: 2;
 }
 #wrap #header .row1 .container > ul > li .top-tooltip ul {
   padding: 10px;
@@ -118,11 +119,281 @@
 }
 #wrap #header .row2 {
   width: 100%;
-  height: 63px;
-  background: #ff3;
+  height: 64px;
+  position: relative;
+  z-index: 1;
+}
+#wrap #header .row2 .container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1050px;
+  display: flex;
+}
+#wrap #header .row2 .container .left {
+  width: 325px;
+  height: 100%;
+}
+#wrap #header .row2 .container .left ul {
+  display: flex;
+  height: 100%;
+}
+#wrap #header .row2 .container .left ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#wrap #header .row2 .container .left ul li h1 a {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+#wrap #header .row2 .container .left ul li h1 a img {
+  width: 82px;
+  height: 42px;
+  cursor: pointer;
+}
+#wrap #header .row2 .container .left ul li h1 a span {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 0 15px;
+  color: #5f0080;
+}
+#wrap #header .row2 .container .left ul li i {
+  color: #b5b5b5;
+  margin: 0 15px;
+}
+#wrap #header .row2 .container .left ul li span a {
+  color: #b5b5b5;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.1s;
+}
+#wrap #header .row2 .container .left ul li span a:hover {
+  color: #5f0080;
+}
+#wrap #header .row2 .container .left ul li span a img {
+  vertical-align: top;
+  width: 6px;
+  margin: -3px 0 0 2px;
+}
+#wrap #header .row2 .container .center {
+  width: 400px;
+  height: 100%;
+}
+#wrap #header .row2 .container .center .search-box {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#wrap #header .row2 .container .center .search-box input {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #5f0080;
+  border-radius: 5px;
+  padding: 0 15px;
+  text-align: start;
+  font-weight: 500;
+  font-size: 14px;
+}
+#wrap #header .row2 .container .center .search-box input:focus {
+  outline: 0;
+}
+#wrap #header .row2 .container .center .search-box a {
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  right: 1px;
+}
+#wrap #header .row2 .container .center .search-box a img {
+  width: 36px;
+  height: 36px;
+}
+#wrap #header .row2 .container .right {
+  width: 325px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#wrap #header .row2 .container .right > div {
+  display: flex;
+  align-items: center;
+  margin: 0 14px;
+  position: relative;
+  height: 100%;
+}
+#wrap #header .row2 .container .right > div:nth-child(1) {
+  z-index: 2;
+}
+#wrap #header .row2 .container .right > div:nth-child(2) {
+  z-index: 1;
+}
+#wrap #header .row2 .container .right > div:nth-child(3) {
+  z-index: 1;
+}
+#wrap #header .row2 .container .right > div a img {
+  width: 36px;
+}
+#wrap #header .row2 .container .right > div .map-tooltip-menu {
+  display: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 63px;
+  left: 56px;
+  width: 267px;
+  margin: 0 0 0 -155px;
+}
+#wrap #header .row2 .container .right > div .map-tooltip-menu ul {
+  padding: 15px;
+}
+#wrap #header .row2 .container .right > div .map-tooltip-menu ul li {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 3px 0;
+}
+#wrap #header .row2 .container .right > div .map-tooltip-menu ul li em {
+  color: #5f0080;
+}
+#wrap #header .row2 .container .right > div .map-tooltip-menu ul li > span {
+  color: #333;
+}
+#wrap #header .row2 .container .right > div .map-tooltip-menu ul li button {
+  cursor: pointer;
+  border: 1px solid #5f0080;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 500;
+}
+#wrap #header .row2 .container .right > div .map-tooltip-menu ul li button.login-btn {
+  width: 80px;
+  height: 35px;
+  color: #5f0080;
+  background-color: #fff;
+}
+#wrap #header .row2 .container .right > div .map-tooltip-menu ul li button.address-search-btn {
+  width: 145px;
+  height: 35px;
+  background: #5f0080;
+  color: #fff;
+}
+#wrap #header .row2 .container .right > div .map-tooltip-menu ul li button.address-search-btn img {
+  width: 22px;
+  color: #fff;
+}
+#wrap #header .row2 .container .right > div .map-tooltip-menu ul li button.address-search-btn img span {
+  color: #fff;
 }
 #wrap #header .row3 {
   width: 100%;
   height: 56px;
-  background: #ffc;
+}
+#wrap #header .row3 .container {
+  width: 100%;
+  height: 100%;
+  max-width: 1050px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#wrap #header .row3 .container > div.left a img {
+  width: 16px;
+  height: 14px;
+}
+#wrap #header .row3 .container > div.left a strong {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 0 10px;
+}
+#wrap #header .row3 .container > div.left a strong:hover {
+  color: #5f0080;
+}
+#wrap #header .row3 .container > div.center ul {
+  display: flex;
+}
+#wrap #header .row3 .container > div.center ul li {
+  margin: 0 50px;
+}
+#wrap #header .row3 .container > div.center ul li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  padding: 0 0 1px 0;
+}
+#wrap #header .row3 .container > div.center ul li a:hover {
+  color: #5f0080;
+  border-bottom: 1px solid #5f0080;
+}
+#wrap #header .row3 .container > div.center ul li a.on {
+  color: #5f0080;
+}
+#wrap #header .row3 .container > div.right span a {
+  font-size: 13px;
+  padding: 7px 13px;
+  line-height: 16px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+}
+#wrap #header .row3 .container > div.right span a em {
+  color: #5f0080;
+  font-weight: 600;
+}
+#wrap #header .row3 .container > div.right span a em i {
+  color: #5f0080;
+}
+#wrap #header .row3 .container > div.right span a strong {
+  color: #777;
+  margin: 0 0 0 5px;
+}
+#wrap #main #section1 {
+  width: 100%;
+}
+#wrap #main #section1 .slide-container {
+  position: relative;
+  width: 100%;
+}
+#wrap #main #section1 .slide-container .slide-view {
+  position: relative;
+  width: 100%;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap {
+  position: relative;
+  width: 1900%;
+  left: 0%;
+  display: flex;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide {
+  width: 100%;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide a {
+  display: block;
+  width: 100%;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide a img {
+  width: 100%;
+}
+#wrap #main #section2 {
+  width: 100%;
+  height: 600px;
+  background-color: #9c9;
+}
+#wrap #main #section3 {
+  width: 100%;
+  height: 600px;
+  background-color: #99c;
+}
+#wrap #footer {
+  width: 100%;
+  height: 600px;
+  background-color: #ccc;
+  border-top: 1px solid #ccc;
 }
